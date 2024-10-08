@@ -26,41 +26,89 @@
 
 </head>
 
-<body>
+
   <main class="lead-img">
     
-    <body>
-<section>
-<article class="intro-text">
- <h1>Positivity Advice</h1>
-</article>
-</section> 
+
+
+    <html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Display Today's Date</title>
+  <script>
+    function showDate() {
+      const today = new Date();
+      const options = { year: 'numeric', month: 'long', day: 'numeric' };
+      document.getElementById('date').innerHTML = today.toLocaleDateString(undefined, options);
+    }
+  </script>
+</head>
+<body onload="showDate()">
+  <article class="intro-text">
+  <h2>DATE:<p id="date"></p></h2>
+  <style>
+    h2 {text-align: left;}
+  </style>
+  
+  </article>
+</body>
+</html>
+
+
 
 <section>
     <article class="intro-text">
-     <h4>You’ve accomplished so much, and that’s something to be incredibly proud of! 
-        Each step forward, no matter how small, is a testament to your dedication and hard work. Keep pushing ahead; your perseverance is inspiring. 
+     <h3> Emotion % <br>
+      Sense of Accompilshment % <br>
+      Sense of Belonging % <br>
+        </h3>
+        <style>
+          h3 {text-align: left;}
+        </style>
+    </article>
+</section> 
+
+<section>
+  <h1>Journal Entry</h1>
+</section>
+
+<section>
+    <article class="intro-text">
+     <h4>This is you free entry<br>
+        </h4>
+
+    </article>
+</section> 
+
+
+<section>
+  <h1>Positivity Advice</h1>
+
+</section>
+
+<section>
+    <article class="intro-text">
+     <h4>You’ve accomplished so much, and that’s something to be incredibly proud of! <br>
+        Each step forward, no matter how small, is a testament to your dedication and hard work. Keep pushing ahead; your perseverance is inspiring. <br>
         Embrace the journey and celebrate your milestones along the way—you’ve got this!
         </h4>
+
     </article>
-    </section> 
+</section> 
 
-</body>
-<section class="grid-container col-3">
-    <p>
-      
-      <a href="toppage.html">save</a>
-    </p>
-</div>
-  <section class="grid-container col-3">
-      <p>
-        
-        <a href="toppage.html">Restart Journaling</a>
-      </p>
-      
-    </div>
 
-</main>
+ <section>
+   <a href="toppage.html"><img src="../images/save.png"/></a>
+ </section>
+
+ <selection>
+   <a href="toppage.html"><img src="../images/restart.png"/></a>
+ </section>
+   
+
+
+
   <footer>
     <h3>Be mindful and affirm positivity </h3>
     <nav>
