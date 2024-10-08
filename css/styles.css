@@ -27,7 +27,11 @@
 
 /* Placeholder for Google Fonts import */
 
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Imbue:opsz,wght@10..100,100..900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
 
 
 :root {
@@ -35,8 +39,8 @@
     /* VARIABLES */
 
     /* Typography */
-  --headingFont: "Playfair Display", serif;
-  --bodyFont: "Playfair Display", sans-serif;
+  --headingFont: "Imbue", serif;
+  --bodyFont: "Manrope", sans-serif;
 
   --baseFontSize: clamp(0.875rem, 0.7885rem + 0.3846vw, 1.25rem);
 
@@ -102,12 +106,14 @@ html {
   font-size: var(--baseFontSize);
   scroll-behavior: smooth;
   font-family: var(--bodyFont);
+  font-style: normal;
 }
 
 body {
   line-height: 1.5;
   font-weight: 400;
   font-family: var(--bodyFont);
+  font-style: normal;
   color: var(--textColor); 
   background-color: var(--bg);;
 }
@@ -252,7 +258,9 @@ li {
 
 /* Grid
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-   .grid-container {
+   
+
+.grid-container {
     position: relative;
     max-width: var(--max-width);
     margin: 0 auto;
