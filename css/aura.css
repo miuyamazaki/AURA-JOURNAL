@@ -8,3 +8,13 @@
     padding: 0; /* Removes default body padding */
     height: 100vh;
 }
+.result-img {
+    background: url("images/400c30b4409f32bdef5598ec252ebd5a copy.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:1000px;
+    margin: 0; /* Removes default body margin */
+    padding: 0; /* Removes default body padding */
+    height: 100vh;
+}
