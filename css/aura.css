@@ -18,5 +18,10 @@
 .big-button {
     width: 600px;  
     height: auto; 
- 
+    position: center center;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+    height: 100vh;          /* Full viewport height */
+    margin: 0;
 }

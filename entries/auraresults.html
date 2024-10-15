@@ -32,29 +32,42 @@
 
 
     <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Display Today's Date</title>
-  <script>
+
+      <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Display Today's Date</title>
+       
+      </head>
+      <section onload="showDate()"> <!-- Call showDate() when the page loads -->
+      
+   <script>
     function showDate() {
       const today = new Date();
       const options = { year: 'numeric', month: 'long', day: 'numeric' };
       document.getElementById('date').innerHTML = today.toLocaleDateString(undefined, options);
     }
+    window.onload = showDate;
   </script>
-</head>
-<section onload="showDate()">
-  <article class="intro-text">
+  
+  <section>
+    <article class="intro-text">
+      <h2>DATE:
+      <p id="date"></p>
+      </h2>
 
-  <h2>DATE:<p id="date">
-  </p>
-  </h2>
-  <style>
-    h2 {text-align: left;}
-  </style>
+    </article>
+  
+  </section>
+    <style>
+      h2 {text-align: left;
+      margin-left: 40px;}
+      
+    </style>
+
   </section>
   </article>
+
 </body>
 </html>
 
@@ -65,10 +78,9 @@
      <h3> Emotion % <br>
       Sense of Accompilshment % <br>
       Sense of Belonging % <br>
+      
         </h3>
-        <style>
-          h3 {text-align: left;}
-        </style>
+        
     </article>
 </section> 
 
@@ -122,6 +134,9 @@
     <p>&copy; 2024 Miu Yamazaki | Core 1 interaction</p>
   </footer>
   <script src="../js/functions.js"></script>
+
+
+  
 </body>
 </html>
 </main>
