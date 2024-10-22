@@ -129,8 +129,10 @@ header {
   color: white;
   width: 80vw;
   margin: 0 auto;
-  border-bottom: 5px solid var(--gray-700);
   text-align: center;
+  font: var(--headingFont);
+  text-align: left;
+margin-left: 40px;
 }
 
 header nav {
@@ -140,7 +142,7 @@ header nav {
 }
 
 header nav a {
-  color: var(--accent-1);
+  color: var(--white);
   text-decoration: none;
   padding:1rem 2rem 1rem 0;
 }
@@ -150,16 +152,16 @@ header nav a + a {
 }
 
 footer {
-  color: var(--gray-100);
-  background: var(--gray-900);
-  padding: var(--space-3);
+  color: var(yellow);
+  background: var(yellow);
+  padding: var(--space);
   text-align: center;
 }
 footer nav {
   margin:0 auto;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   width: 600px;
 }
 
@@ -414,6 +416,13 @@ there.
 
 /* Larger than tablet */
 @media (min-width: 1200px) {}
+
+.slider {
+  width: 60%;
+  height: 50px; /* Increase the height for a bigger track */
+  margin-top: 20px; 
+}
+
 
 
 
