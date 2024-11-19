@@ -27,39 +27,37 @@
   <link rel="icon" type="image/png" href="../images/favicon.ico">
 
 
+</head>
 
 <body class="gradient3-img">
-
     <input type="checkbox" id="ham-menu">
-<label for="ham-menu">
-  <div class="hide-des">
-    <span class="menu-line"></span>
-    <span class="menu-line"></span>
-    <span class="menu-line"></span>
-    <span class="menu-line"></span>
-    <span class="menu-line"></span>
-    <span class="menu-line"></span>
-  </div>
+    <label for="ham-menu">
+      <div class="hide-des">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </div>
+    
+    </label>
+    <div class="ham-menu">
+      <ul class="centre-text bold-text">
+        <a href="../index.html">HOME</a>
+        <a href="../entries/why_aura_journal.html">Why "Aura Journal"?</a>
+        <a href="../entries/positivity_reading.html">POSITIVITY READING</a>
+        <a href="../entries/relaxation_music.html">RELAXATION MUSIC</a>
+        <a href="../entries/journal_history.html">JOURNAL HISTORY</a>
+      </ul>
+    </div>
+      
 
-</label>
-<div class="ham-menu">
-  <ul class="centre-text bold-text">
-    <a href="../index.html">HOME</a>
-    <a href="../entries/why_aura_journal.html">Why "Aura Journal"?</a>
-    <a href="../entries/positivity_reading.html">POSITIVITY READING</a>
-    <a href="../entries/relaxation_music.html">RELAXATION MUSIC</a>
-    <a href="../entries/journal_history.html">JOURNAL HISTORY</a>
-  </ul>
-</div>
-
+<main>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <h1>Relaxtation Music ♫</h1>
     <style>
-        body {
-            text-align: center;
-            margin: 20px;
-        }
         button {
             padding: 10px 20px;
             font-size: 16px;
@@ -75,8 +73,7 @@
             margin: 5px 0;
         }
     </style>
-</head>
-<body>
+
 
    
     <section>
@@ -86,8 +83,6 @@
 
 <button id="prev">previous</button>
 <button id="next">next</button>
- <button id="playPause">play</button>
-    <button id="shuffle">shuffle</button>
 
 
     <script>
@@ -141,11 +136,7 @@
         }
 
 
-        function toggleShuffle() {
-            isShuffle = !isShuffle;
-            alert(`Shuffle is now ${isShuffle ? "ON" : "OFF"}`);
-        }
-
+    
   
         function togglePlayPause() {
             if (audioPlayer.paused) {
@@ -169,7 +160,7 @@
 
 
 </body>
-
+</main>
 
 </html>
 
