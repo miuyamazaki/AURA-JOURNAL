@@ -205,8 +205,8 @@ figcaption {
 img {
   width: 100%;
   height: auto;
-  margin-top: -70px;
-  margin-bottom: -70px;
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 button {
