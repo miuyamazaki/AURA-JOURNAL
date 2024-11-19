@@ -204,17 +204,25 @@ figcaption {
 
 img {
   width: 100%;
-  height: auto;
-  margin-top: 50px;
-  margin-bottom: 0px;
+  height: 100%;
 }
 
 button {
-  padding: 100px 20px;
+  padding:  15px;
   border-radius: 100px; 
   border: none;
-  background-color: #ffffff28; 
+  background-color: #0000003a; 
   color: white;
+}
+
+.block {
+  display: block;
+  width: 100%;
+  margin-right:100px;
+  background-color: #ffffff38;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
 }
 
 #ham-menu {
@@ -369,7 +377,7 @@ h6 {
 }
 
 h1 { font-size: var(--xlText); }
-h2 { font-size: 2rem; }
+h2 { font-size: var(--lgText); }
 h3 { font-size: var(--mdText); }
 h4 { font-size: var(--baseText); }
 h5 { font-size: var(--smText); }
@@ -387,7 +395,9 @@ p {
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 a {
-  color: var(--accent-1); }
+  color: var(--accent-1);
+margin-left: -50px; 
+margin-right: -50px;}
 a:hover {
   color: var(--accent-2); }
 
@@ -414,7 +424,6 @@ li {
    
 
 .grid-container {
-    position: relative;
     max-width: var(--max-width);
     margin: 0 auto;
     display: grid;
@@ -444,6 +453,7 @@ li {
     }
     .grid-container.col-3 {
       grid-template-columns: repeat(3, 1fr);
+
     }
     .grid-container.col-2 {
       grid-template-columns: 1fr 1fr;
