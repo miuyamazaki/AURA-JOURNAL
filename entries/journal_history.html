@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>AURA JOURNAL</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/aura.css">
+  <link rel="stylesheet" href="../images/">
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../images/favicon.ico">
+
+</head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Display Today's Date</title>
+
+</head>
+
+<main>
+    <h1>JOURNAL HISTORY</h1>
+<section onload="showDate()"> 
+
+<script>
+function showDate() {
+const today = new Date();
+const options = { year: 'numeric', month: 'long', day: 'numeric' };
+document.getElementById('date').innerHTML = today.toLocaleDateString(undefined, options);
+}
+window.onload = showDate;
+</script>
+
+<section>
+<article class="intro-text">
+<h2>DATE: <p id="date"></p>
+</h2>
+
+</article>
+
+</section>
+
+<body class="lead-img">
+
+    <input type="checkbox" id="ham-menu">
+    <label for="ham-menu">
+      <div class="hide-des">
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </div>
+    
+    </label>
+    <div class="ham-menu">
+      <ul class="centre-text bold-text">
+        <a href="../index.html">HOME</a>
+        <a href="../entries/why_aura_journal.html">Why "Aura Journal"?</a>
+        <a href="../entries/positivity_reading.html">POSITIVITY READING</a>
+        <a href="../entries/relaxation_music.html">RELAXATION MUSIC</a>
+        <a href="../entries/journal_history.html">JOURNAL HISTORY</a>
+      </ul>
+    </div>
+    
+
+
+
+</main>
+</body>
+</html>
+

@@ -26,9 +26,11 @@
 
 </head>
 
+
+
 <body class="lead-img">
 
-  <input type="checkbox" id="ham-menu">
+    <input type="checkbox" id="ham-menu">
 <label for="ham-menu">
   <div class="hide-des">
     <span class="menu-line"></span>
@@ -52,24 +54,48 @@
 </div>
 
   <main>
-    
-  
-<section>
-<article class="intro-text">
- <h1>Free entry</h1>
-</article>
-</section> 
-<body>
-  <h3>This is your private space.  Reflect on the day and put your current feelings into words.</h3>
-  <input type="text" size="70" placeholder="Type here...">
-  <style>
-    input {
-        height: 150px
-      
-    }
-</style>
-  </a>
+    <h1>Photo of the day</h1>
+    <section class="grid-container col-2">
 
+    <section>
+        <article class="intro-text">
+         <h2>Upload a photo from today for memory</h2>
+        </article>
+
+        <form id="imageUploadForm">
+            <input type="file" id="imageInput" accept="image/*">    
+        </form>
+       
+        </section> 
+
+         
+<section>
+    <h2>Image Preview:</h2>
+
+    <img id="imagePreview"/>
+
+</section>
+
+    <script>
+        const imageInput = document.getElementById('imageInput');
+        const imagePreview = document.getElementById('imagePreview');
+
+        imageInput.addEventListener('change', function(event) {
+            const file = event.target.files[0]; 
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    imagePreview.src = e.target.result; 
+                }
+                reader.readAsDataURL(file); 
+            } else {
+                imagePreview.src = ""; 
+            }
+        });
+
+
+    </script>
+</section>
 
 
 
@@ -84,7 +110,7 @@
    </figure>
 
     <figure> 
-      <a href="upload_photo.html"><img src="../images/arrownext.png"/></a>
+      <a href="auraresults.html"><img src="../images/arrownext.png"/></a>
     </figure>
 
 </section>

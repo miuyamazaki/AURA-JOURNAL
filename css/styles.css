@@ -156,8 +156,9 @@ header nav a + a {
 footer {
   color: var(yellow);
   background: var(yellow);
-  padding: var(--space);
   text-align: center;
+  padding: 0px;
+  
 }
 footer nav {
   margin:0 auto;
@@ -190,6 +191,12 @@ figure {
   margin:0;
 }
 
+input[type="file"] {
+  width: 150px; /* Adjust the width */
+  height: 30px; /* Adjust the height */
+  font-size: 10px; /* Change the font size */
+}
+
 figcaption {
   font-size:var(--smText);
   color: var(--textColor);
@@ -198,6 +205,16 @@ figcaption {
 img {
   width: 100%;
   height: auto;
+  margin-top: -70px;
+  margin-bottom: -70px;
+}
+
+button {
+  padding: 100px 20px;
+  border-radius: 100px; 
+  border: none;
+  background-color: #ffffff28; 
+  color: white;
 }
 
 #ham-menu {
@@ -322,12 +339,32 @@ h1 {
   font-style: italic;
   letter-spacing: 0.02em;
   font-weight: 400;
+  color: hsl(0, 0%, 100%);
+  margin-top: 100px;
 }
-h2, h3, h4, h5, h6 {
+
+h2,h3 {
+  font-family: var(--headingFont);
+  margin-bottom: var(--space-3);
+  font-style: italic;
+  letter-spacing: 0.02em;
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+}
+h4, h5 {
+  font-family: var(--bodyFont);
+  margin-bottom: var(--space-3);
+  font-style: normal;
+  font-weight: 400;
+  color: hsl(0, 0%, 100%);
+}
+
+h6 {
   font-family: var(--headingFont);
   margin-bottom: var(--space-3);
   font-style: normal;
   font-weight: 400;
+  color: hsl(0, 0%, 100%);
 }
 
 h1 { font-size: var(--xlText); }

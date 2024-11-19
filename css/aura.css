@@ -1,8 +1,9 @@
 .lead-img {
     background: url("../images/3d74cee66709eff0b6c738baf1522297 copy.jpg");
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; /* Ensures the background covers the entire viewport */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed;
 }
 
 

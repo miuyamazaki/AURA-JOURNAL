@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>AURA JOURNAL</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="stylesheet" href="../css/aura.css">
+  <link rel="stylesheet" href="../images/">
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="../images/favicon.ico">
+
+
+
+<body class="lead-img">
+
+    <input type="checkbox" id="ham-menu">
+<label for="ham-menu">
+  <div class="hide-des">
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+    <span class="menu-line"></span>
+  </div>
+
+</label>
+<div class="ham-menu">
+  <ul class="centre-text bold-text">
+    <a href="../index.html">HOME</a>
+    <a href="../entries/why_aura_journal.html">Why "Aura Journal"?</a>
+    <a href="../entries/positivity_reading.html">POSITIVITY READING</a>
+    <a href="../entries/relaxation_music.html">RELAXATION MUSIC</a>
+    <a href="../entries/journal_history.html">JOURNAL HISTORY</a>
+  </ul>
+</div>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <h1>Relaxtation Music</h1>
+    <style>
+        body {
+            text-align: center;
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+        }
+        #playlist {
+            margin: 20px 0;
+            list-style: none;
+            padding: 0;
+        }
+        #playlist li {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <section>
+    <audio id="audioPlayer" controls style="margin-top: 20px;"></audio>
+    <ul id="playlist"></ul>
+</section>
+
+<button id="prev">previous</button>
+<button id="next">next</button>
+ <button id="playPause">play</button>
+    <button id="shuffle">shuffle</button>
+
+
+    <script>
+      
+        const songs = [
+            {src: "../mp3/watermarked_Reveille_Dream_Tides_instrumental_3_00.mp3" }, // Replace with actual file paths
+            {src: "../mp3/watermarked_echowave_Respire_instrumental_2_40.mp3" },
+            {src: "../mp3/mp3/watermarked_Solitude_Finally_Found_You_instrumental_0_54.mp3"}
+        ];
+
+        let currentIndex = 0;
+        let isShuffle = false;
+
+        const audioPlayer = document.getElementById('audioPlayer');
+        const playPauseButton = document.getElementById('playPause');
+        const playlistElement = document.getElementById('playlist');
+
+
+        function populatePlaylist() {
+            playlistElement.innerHTML = '';
+            songs.forEach((song, index) => {
+                const li = document.createElement('li');
+                li.textContent = song.title;
+                if (index === currentIndex) li.style.fontWeight = 'bold'; // Highlight current song
+                playlistElement.appendChild(li);
+            });
+        }
+
+ 
+        function playCurrentSong() {
+            const song = songs[currentIndex];
+            audioPlayer.src = song.src;
+            audioPlayer.play();
+            populatePlaylist();
+        }
+
+
+        function playNextSong() {
+            currentIndex = isShuffle 
+                ? Math.floor(Math.random() * songs.length) // Shuffle logic
+                : (currentIndex + 1) % songs.length; // Normal next logic
+            playCurrentSong();
+        }
+
+  
+        function playPreviousSong() {
+            currentIndex = isShuffle 
+                ? Math.floor(Math.random() * songs.length) 
+                : (currentIndex - 1 + songs.length) % songs.length; // Handle negative index
+            playCurrentSong();
+        }
+
+
+        function toggleShuffle() {
+            isShuffle = !isShuffle;
+            alert(`Shuffle is now ${isShuffle ? "ON" : "OFF"}`);
+        }
+
+  
+        function togglePlayPause() {
+            if (audioPlayer.paused) {
+                audioPlayer.play();
+                playPauseButton.textContent = "Pause";
+            } else {
+                audioPlayer.pause();
+                playPauseButton.textContent = "Play";
+            }
+        }
+        document.getElementById('next').addEventListener('click', playNextSong);
+        document.getElementById('prev').addEventListener('click', playPreviousSong);
+        document.getElementById('shuffle').addEventListener('click', toggleShuffle);
+        playPauseButton.addEventListener('click', togglePlayPause);
+        audioPlayer.addEventListener('ended', playNextSong); // Auto-play next when current ends
+
+    
+        populatePlaylist();
+        playCurrentSong();
+    </script>
+
+
+</body>
+
+
+</html>
+
