@@ -205,7 +205,7 @@ figcaption {
 img {
   width: 100%;
   height: auto;
-  margin-top: 0px;
+  margin-top: 50px;
   margin-bottom: 0px;
 }
 
@@ -345,6 +345,7 @@ h1 {
 
 h2,h3 {
   font-family: var(--headingFont);
+  margin-top: var(--space-0);
   margin-bottom: var(--space-3);
   font-style: italic;
   letter-spacing: 0.02em;
@@ -452,8 +453,6 @@ li {
     }
   }
   
-  
-
 /* Flexbox */
 .flex {
   display: flex;
