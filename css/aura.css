@@ -6,6 +6,38 @@
     background-attachment: fixed;
 }
 
+.gradient1-img {
+    background: url("../images/gradient1.jpg");
+    background-size: cover; /* Ensures the background covers the entire viewport */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed;
+}
+
+.gradient2-img {
+    background: url("../images/gradient2.jpg");
+    background-size: cover; /* Ensures the background covers the entire viewport */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed;
+}
+
+.gradient3-img {
+    background: url("../images/gradient3.jpg");
+    background-size: cover; /* Ensures the background covers the entire viewport */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed;
+}
+
+.gradient4-img {
+    background: url("../images/gradient4.jpg");
+    background-size: cover; /* Ensures the background covers the entire viewport */
+    background-position: center; /* Centers the background image */
+    background-repeat: no-repeat; /* Prevents tiling */
+    background-attachment: fixed;
+}
+
 
 .result-img {
     background: url("../images/400c30b4409f32bdef5598ec252ebd5a copy.jpg");
