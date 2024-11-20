@@ -215,6 +215,22 @@ button {
   color: white;
 }
 
+.arrow{
+  margin:auto;
+  width:30px;
+  text-align:center;
+}
+.arrow img{
+  width:20px;
+  height:auto;
+  margin:auto;
+  opacity:50%;
+}
+.dots img{
+  width:50px;
+  height:auto;
+}
+
 .block {
   display: block;
   width: 100%;
@@ -433,9 +449,22 @@ li {
     /* by default use min 200px wide columns auto-fit into width */
     grid-template-columns: minmax(200px, 1fr);
   }
+  #arrowsgrid{
+    display:grid;
+    max-width:fit-content;
+    margin:auto;
+    grid-template-columns: repeat(3, 50px);
+    grid-template-rows:1fr;
+    grid-gap:0px;
+    gap:0px;
+  }
   
   /* grids to 3 columns above mobile sizes */
   @media (min-width: 600px) {
+
+
+  
+
     .grid-container {
       grid-template-columns: repeat(3, 1fr);
       padding: 10px 0;
