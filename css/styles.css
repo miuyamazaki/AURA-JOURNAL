@@ -212,6 +212,7 @@ button {
   border: none;
   background-color: #0000003a; 
   color: white;
+  
 }
 
 .arrow{
@@ -225,10 +226,6 @@ button {
   margin:auto;
   opacity:50%;
 }
-.dots img{
-  width:50px;
-  height:auto;
-}
 
 .block {
   display: block;
@@ -239,6 +236,9 @@ button {
   cursor: pointer;
   text-align: center;
 }
+
+
+
 
 #ham-menu {
   display: none;
@@ -459,6 +459,17 @@ li {
     gap:0px;
   }
   
+  #photogrid{
+    display:grid;
+    max-width:fit-content;
+    margin:auto;
+    grid-template-columns: repeat(2, 600px);
+    grid-template-rows:1fr;
+    margin-bottom: 200px;
+    grid-gap:0px;
+    gap:0px;
+  }
+
   /* grids to 3 columns above mobile sizes */
   @media (min-width: 600px) {
 
