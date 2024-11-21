@@ -154,10 +154,9 @@ header nav a + a {
 }
 
 footer {
-  color: var(yellow);
-  background: var(yellow);
   text-align: center;
   padding: 0px;
+  margin: auto;
   
 }
 footer nav {
@@ -280,7 +279,7 @@ label[for="ham-menu"] {
 .ham-menu > ul > a {
   font: var( --bodyFont);
   text-decoration:none;
-  font-size: 10px;
+  font-size: 15px;
   letter-spacing: 0.15em;
   cursor: pointer;
   color: rgb(255, 255, 255);
@@ -364,13 +363,13 @@ h1 {
   letter-spacing: 0.02em;
   font-weight: 400;
   color: hsl(0, 0%, 100%);
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 h2,h3 {
   font-family: var(--headingFont);
   margin-top: var(--space-0);
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-5);
   font-style: italic;
   letter-spacing: 0.02em;
   font-weight: 400;
@@ -453,8 +452,9 @@ li {
     display:grid;
     max-width:fit-content;
     margin:auto;
-    grid-template-columns: repeat(3, 50px);
+    grid-template-columns: repeat(2, 200px);
     grid-template-rows:1fr;
+    margin: auto;
     grid-gap:0px;
     gap:0px;
   }
